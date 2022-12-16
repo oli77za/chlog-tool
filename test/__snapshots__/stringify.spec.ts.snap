@@ -28,10 +28,3 @@ exports[`Strigify Should stringify an empty structure 1`] = `
 
 "
 `;
-
-exports[`Strigify Should stringify and empty structure 1`] = `
-"
-
-
-"
-`;

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Handlers / Parse Should parse from input file 1`] = `
+[
+  [
+    "{"foo":"bar"}",
+  ],
+]
+`;
+
+exports[`Handlers / Parse Should parse from stdin 1`] = `
+[
+  [
+    "{"foo":"bar"}",
+  ],
+]
+`;
+
+exports[`Handlers / Parse Should pretty print the output 1`] = `
+[
+  [
+    "{
+  "foo": "bar"
+}",
+  ],
+]
+`;

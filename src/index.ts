@@ -1,10 +1,11 @@
 import yargs from 'yargs';
 
+import argsProvider from './args_provider';
 import init from './handlers/init.handler';
 import parse from './handlers/parse.handler';
 import runRelease from './handlers/run_release.handler';
 
-yargs
+yargs(argsProvider())
   .option('input', {
     alias: 'i',
     description: 'The input file to be used by the tool',
