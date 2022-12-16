@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Parser Should parse a new initialised changelog 1`] = `
+{
+  "introduction": [
+    "# Changelog",
+    "",
+    "All notable changes to this project will be documented in this file.",
+    "",
+    "The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),",
+    "and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).",
+    "",
+  ],
+  "links": [
+    {
+      "content": "[unreleased]: https://github.com/oli77za/chlog-tool",
+      "gitBaseHref": "https://github.com/oli77za/chlog-tool",
+      "version": "unreleased",
+    },
+  ],
+  "unreleased": [
+    "## [Unreleased]",
+    "",
+    "### Added ",
+    "",
+    "- Initial implementation",
+    "",
+  ],
+  "versions": [],
+}
+`;
+
+exports[`Parser Should parse file 1`] = `
+{
+  "introduction": [
+    "# Changelog",
+    "",
+    "All notable changes to this project will be documented in this file.",
+    "",
+    "The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)",
+    "and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).",
+    "",
+  ],
+  "links": [
+    {
+      "content": "[unreleased]: https://testgit.test/testrepo/compare/v1.1.0...HEAD",
+      "gitBaseHref": "https://testgit.test/testrepo/compare/v1.1.0...HEAD",
+      "version": "unreleased",
+    },
+    {
+      "content": "[v1.1.0]: https://testgit.test/testrepo/compare/v1.0.9...v1.1.0",
+      "gitBaseHref": "https://testgit.test/testrepo/compare/v1.0.9...v1.1.0",
+      "version": "v1.1.0",
+    },
+    {
+      "content": "[v1.0.9]: https://testgit.test/testrepo/releases/tag/v1.0.9",
+      "gitBaseHref": "https://testgit.test/testrepo/releases/tag/v1.0.9",
+      "version": "v1.0.9",
+    },
+  ],
+  "unreleased": [
+    "## [Unreleased]",
+    "### Add",
+    "- TEST-1: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni",
+    "- TEST-2: Ut enim ad minima veniam, quis nostrum exercitationem ullam",
+    "",
+  ],
+  "versions": [
+    {
+      "content": [
+        "## [v1.1.0] - 2022-12-13",
+        "### Add",
+        "- TEST-TICKET-3: Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "- TEST-TICKET-2: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium",
+        "",
+        "### Change",
+        "- TEST-TICKET-1: Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"",
+        "",
+        "",
+        "",
+      ],
+      "date": "2022-12-13",
+      "version": "v1.1.0",
+    },
+    {
+      "content": [
+        "## [v1.0.9] - 2022-05-29",
+        "- At vero eos et accusamus et iusto odio",
+        "",
+      ],
+      "date": "2022-05-29",
+      "version": "v1.0.9",
+    },
+  ],
+}
+`;

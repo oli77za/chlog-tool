@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Produce release Should produce a first release from a newly initialised CHANGELOG 1`] = `
+{
+  "introduction": [
+    "# Changelog",
+    "",
+    "All notable changes to this project will be documented in this file.",
+    "",
+    "The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),",
+    "and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).",
+    "",
+  ],
+  "links": [
+    {
+      "content": "[unreleased] https://github.com/oli77za/chlog-tool/compare/2.3.5...HEAD",
+      "gitBaseHref": "https://github.com/oli77za/chlog-tool",
+      "version": "unreleased",
+    },
+    {
+      "content": "[2.3.5] https://github.com/oli77za/chlog-tool/releases/tag/2.3.5",
+      "gitBaseHref": "https://github.com/oli77za/chlog-tool",
+      "version": "2.3.5",
+    },
+  ],
+  "unreleased": [
+    "# [Unreleased]",
+    "",
+  ],
+  "versions": [
+    {
+      "content": [
+        "# [2.3.5] - 2020-09-13",
+        "",
+        "### Added ",
+        "",
+        "- Initial implementation",
+        "",
+      ],
+      "date": "2020-09-13",
+      "version": "2.3.5",
+    },
+  ],
+}
+`;
+
+exports[`Produce release Should produce a new release with a new link 1`] = `
+{
+  "introduction": [],
+  "links": [
+    {
+      "content": "[unreleased] gitBaseHref/compare/2.3.5...HEAD",
+      "gitBaseHref": "gitBaseHref",
+      "version": "unreleased",
+    },
+    {
+      "content": "[2.3.5] gitBaseHref/compare/1.0.0...2.3.5",
+      "gitBaseHref": "gitBaseHref",
+      "version": "2.3.5",
+    },
+    {
+      "content": "I don't care",
+      "gitBaseHref": "gitBaseHref",
+      "version": "1.0.0",
+    },
+  ],
+  "unreleased": [
+    "# [Unreleased]",
+    "",
+  ],
+  "versions": [
+    {
+      "content": [
+        "# [2.3.5] - 2020-09-13",
+      ],
+      "date": "2020-09-13",
+      "version": "2.3.5",
+    },
+  ],
+}
+`;
+
+exports[`Produce release Should produce a new release with the first link 1`] = `
+{
+  "introduction": [],
+  "links": [
+    {
+      "content": "[unreleased] undefined/compare/2.3.5...HEAD",
+      "gitBaseHref": "unknown",
+      "version": "unreleased",
+    },
+    {
+      "content": "[2.3.5] undefined/releases/tag/2.3.5",
+      "gitBaseHref": "unknown",
+      "version": "2.3.5",
+    },
+  ],
+  "unreleased": [
+    "# [Unreleased]",
+    "",
+  ],
+  "versions": [
+    {
+      "content": [
+        "# [2.3.5] - 2020-09-13",
+      ],
+      "date": "2020-09-13",
+      "version": "2.3.5",
+    },
+  ],
+}
+`;
