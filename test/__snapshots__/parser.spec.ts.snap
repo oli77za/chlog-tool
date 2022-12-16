@@ -1,5 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Parser Should empty content 1`] = `
+{
+  "introduction": [
+    "",
+  ],
+  "links": [],
+  "unreleased": [],
+  "versions": [],
+}
+`;
+
 exports[`Parser Should parse a new initialised changelog 1`] = `
 {
   "introduction": [

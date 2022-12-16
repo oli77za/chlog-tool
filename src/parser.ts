@@ -49,9 +49,9 @@ const parseLine = (
   if (linkMatch) {
     newState = PARSING_STATE.LINK;
     outputStruct.links.push({
-      version: (linkMatch || [])[1],
+      version: linkMatch[1],
       content: line,
-      gitBaseHref: (linkMatch || [])[2],
+      gitBaseHref: linkMatch[2],
     });
   }
 

@@ -12,6 +12,7 @@ const config: Config.InitialOptions = {
       },
     ],
   },
+  collectCoverageFrom: ['src/**/*.ts'],
   reporters: [
     'default',
     [
