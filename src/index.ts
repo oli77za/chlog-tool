@@ -6,6 +6,7 @@ import parse from './handlers/parse.handler';
 import runRelease from './handlers/run_release.handler';
 
 yargs(argsProvider())
+  .usage('Parses and updates changelog files\n\nUsage: $0 <command> [options]')
   .option('input', {
     alias: 'i',
     description: 'The input file to be used by the tool',
