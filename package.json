@@ -1,6 +1,6 @@
 {
   "name": "chlog-tool",
-  "version": "0.0.1",
+  "version": "0.0.1-0",
   "main": "dist/index.js",
   "bin": {
     "chlogtool": "bin/chlogtool"
@@ -10,9 +10,10 @@
     "name": "Oliver Zampieri",
     "email": "oliver.zampieri@gmail.com"
   },
+  "homepage": "https://github.com/oli77za/chlog-tool/blob/develop/README.md",
   "repository": {
-    "type": "GIT",
-    "url": ""
+    "type": "git",
+    "url": "https://github.com/oli77za/chlog-tool.git"
   },
   "files": [
     "bin/**",
