@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Handlers / Run release Should run a release from file 1`] = `
+[
+  [
+    "
+
+
+",
+  ],
+]
+`;
+
+exports[`Handlers / Run release Should run a release from stdin 1`] = `
+[
+  [
+    "
+
+
+",
+  ],
+]
+`;

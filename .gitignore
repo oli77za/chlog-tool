@@ -3,3 +3,4 @@ node_modules
 **/.*.swp
 dist
 test-reports
+coverage

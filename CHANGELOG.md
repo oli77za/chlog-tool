@@ -7,8 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] - 2022-12-18
+
 ### Added 
 
 - Initial implementation
 
-[unreleased]: https://github.com/oli77za/chlog-tool
+[unreleased] https://github.com/oli77za/chlog-tool/compare/1.0.0...HEAD
+[1.0.0] https://github.com/oli77za/chlog-tool/releases/tag/1.0.0

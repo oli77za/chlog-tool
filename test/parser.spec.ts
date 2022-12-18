@@ -30,4 +30,15 @@ describe('Parser', () => {
     // Then
     expect(expected).toMatchSnapshot();
   });
+
+  it('Should empty content', () => {
+    // Given
+    const changelogText = '';
+
+    // When
+    const parsed = parse(changelogText);
+
+    // Then
+    expect(parsed).toMatchSnapshot();
+  });
 });

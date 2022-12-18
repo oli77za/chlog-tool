@@ -24,13 +24,13 @@ exports[`Produce release Should produce a first release from a newly initialised
     },
   ],
   "unreleased": [
-    "# [Unreleased]",
+    "## [Unreleased]",
     "",
   ],
   "versions": [
     {
       "content": [
-        "# [2.3.5] - 2020-09-13",
+        "## [2.3.5] - 2020-09-13",
         "",
         "### Added ",
         "",
@@ -65,13 +65,13 @@ exports[`Produce release Should produce a new release with a new link 1`] = `
     },
   ],
   "unreleased": [
-    "# [Unreleased]",
+    "## [Unreleased]",
     "",
   ],
   "versions": [
     {
       "content": [
-        "# [2.3.5] - 2020-09-13",
+        "## [2.3.5] - 2020-09-13",
       ],
       "date": "2020-09-13",
       "version": "2.3.5",
@@ -96,13 +96,13 @@ exports[`Produce release Should produce a new release with the first link 1`] = 
     },
   ],
   "unreleased": [
-    "# [Unreleased]",
+    "## [Unreleased]",
     "",
   ],
   "versions": [
     {
       "content": [
-        "# [2.3.5] - 2020-09-13",
+        "## [2.3.5] - 2020-09-13",
       ],
       "date": "2020-09-13",
       "version": "2.3.5",
