@@ -13,5 +13,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial implementation
 
-[unreleased] https://github.com/oli77za/chlog-tool/compare/1.0.0...HEAD
-[1.0.0] https://github.com/oli77za/chlog-tool/releases/tag/1.0.0
+[unreleased]: https://github.com/oli77za/chlog-tool/compare/1.0.0...HEAD
+[1.0.0]: https://github.com/oli77za/chlog-tool/releases/tag/1.0.0
