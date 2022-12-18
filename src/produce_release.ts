@@ -21,13 +21,13 @@ export default (
   const today = dayjs().format('YYYY-MM-DD');
   return {
     introduction: changelogStruct.introduction,
-    unreleased: ['# [Unreleased]', ''],
+    unreleased: ['## [Unreleased]', ''],
     versions: [
       {
         version: newVersion,
         date: today,
         content: [
-          `# [${newVersion}] - ${today}`,
+          `## [${newVersion}] - ${today}`,
           ...changelogStruct.unreleased.splice(1),
         ],
       },
