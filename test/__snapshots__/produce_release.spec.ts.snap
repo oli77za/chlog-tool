@@ -13,12 +13,12 @@ exports[`Produce release Should produce a first release from a newly initialised
   ],
   "links": [
     {
-      "content": "[unreleased] https://github.com/oli77za/chlog-tool/compare/2.3.5...HEAD",
+      "content": "[unreleased]: https://github.com/oli77za/chlog-tool/compare/2.3.5...HEAD",
       "gitBaseHref": "https://github.com/oli77za/chlog-tool",
       "version": "unreleased",
     },
     {
-      "content": "[2.3.5] https://github.com/oli77za/chlog-tool/releases/tag/2.3.5",
+      "content": "[2.3.5]: https://github.com/oli77za/chlog-tool/releases/tag/2.3.5",
       "gitBaseHref": "https://github.com/oli77za/chlog-tool",
       "version": "2.3.5",
     },
@@ -49,12 +49,12 @@ exports[`Produce release Should produce a new release with a new link 1`] = `
   "introduction": [],
   "links": [
     {
-      "content": "[unreleased] gitBaseHref/compare/2.3.5...HEAD",
+      "content": "[unreleased]: gitBaseHref/compare/2.3.5...HEAD",
       "gitBaseHref": "gitBaseHref",
       "version": "unreleased",
     },
     {
-      "content": "[2.3.5] gitBaseHref/compare/1.0.0...2.3.5",
+      "content": "[2.3.5]: gitBaseHref/compare/1.0.0...2.3.5",
       "gitBaseHref": "gitBaseHref",
       "version": "2.3.5",
     },
@@ -85,12 +85,12 @@ exports[`Produce release Should produce a new release with the first link 1`] = 
   "introduction": [],
   "links": [
     {
-      "content": "[unreleased] undefined/compare/2.3.5...HEAD",
+      "content": "[unreleased]: undefined/compare/2.3.5...HEAD",
       "gitBaseHref": "unknown",
       "version": "unreleased",
     },
     {
-      "content": "[2.3.5] undefined/releases/tag/2.3.5",
+      "content": "[2.3.5]: undefined/releases/tag/2.3.5",
       "gitBaseHref": "unknown",
       "version": "2.3.5",
     },

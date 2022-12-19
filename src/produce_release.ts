@@ -37,7 +37,7 @@ export default (
       {
         version: 'unreleased',
         gitBaseHref: changelogStruct.links[0]?.gitBaseHref || 'unknown',
-        content: `[unreleased] ${computeHref(
+        content: `[unreleased]: ${computeHref(
           'unreleased',
           newVersion,
           changelogStruct.links[0]?.gitBaseHref
@@ -46,7 +46,7 @@ export default (
       {
         version: newVersion,
         gitBaseHref: changelogStruct.links[0]?.gitBaseHref || 'unknown',
-        content: `[${newVersion}] ${computeHref(
+        content: `[${newVersion}]: ${computeHref(
           newVersion,
           changelogStruct.links.filter(
             (link) => link.version !== 'unreleased'
