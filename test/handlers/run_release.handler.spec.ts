@@ -1,6 +1,8 @@
 const readFileSyncMock = jest.fn().mockReturnValue('');
+const writeFileSyncMock = jest.fn();
 jest.mock('fs', () => ({
   readFileSync: readFileSyncMock,
+  writeFileSync: writeFileSyncMock,
 }));
 
 const parseFunctionMock = jest.fn().mockReturnValue({ foo: 'bar' });
@@ -40,5 +42,15 @@ describe('Handlers / Run release', () => {
     expect(produceReleaseMock.mock.calls[0][0]).toBe('x.y.z');
     expect(produceReleaseMock.mock.calls[0][1]).toStrictEqual({ foo: 'bar' });
     expect(writeSpy.mock.calls).toMatchSnapshot();
+  });
+
+  it('Should run a release replacing the file', () => {
+    const parseArgs = { ver: 'x.y.z', replace: 'inputfile' } as any;
+    runRelease(parseArgs);
+    expect(readFileSyncMock.mock.calls[0][0]).toBe('inputfile');
+    expect(produceReleaseMock.mock.calls[0][0]).toBe('x.y.z');
+    expect(produceReleaseMock.mock.calls[0][1]).toStrictEqual({ foo: 'bar' });
+    expect(writeSpy).not.toHaveBeenCalled();
+    expect(writeFileSyncMock.mock.calls).toMatchSnapshot();
   });
 });

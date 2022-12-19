@@ -21,3 +21,15 @@ exports[`Handlers / Run release Should run a release from stdin 1`] = `
   ],
 ]
 `;
+
+exports[`Handlers / Run release Should run a release replacing the file 1`] = `
+[
+  [
+    "inputfile",
+    "
+
+
+",
+  ],
+]
+`;
