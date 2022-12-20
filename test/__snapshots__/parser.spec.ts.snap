@@ -25,7 +25,7 @@ exports[`Parser Should parse a new initialised changelog 1`] = `
   "links": [
     {
       "content": "[unreleased]: https://github.com/oli77za/chlog-tool",
-      "gitBaseHref": "https://github.com/oli77za/chlog-tool",
+      "gitBaseHref": "https://github.com/oli77za/chlog-tool/",
       "version": "unreleased",
     },
   ],
@@ -55,17 +55,17 @@ exports[`Parser Should parse file 1`] = `
   "links": [
     {
       "content": "[unreleased]: https://testgit.test/testrepo/compare/v1.1.0...HEAD",
-      "gitBaseHref": "https://testgit.test/testrepo/compare/v1.1.0...HEAD",
+      "gitBaseHref": "https://testgit.test/testrepo/",
       "version": "unreleased",
     },
     {
       "content": "[v1.1.0]: https://testgit.test/testrepo/compare/v1.0.9...v1.1.0",
-      "gitBaseHref": "https://testgit.test/testrepo/compare/v1.0.9...v1.1.0",
+      "gitBaseHref": "https://testgit.test/testrepo/",
       "version": "v1.1.0",
     },
     {
       "content": "[v1.0.9]: https://testgit.test/testrepo/releases/tag/v1.0.9",
-      "gitBaseHref": "https://testgit.test/testrepo/releases/tag/v1.0.9",
+      "gitBaseHref": "https://testgit.test/testrepo/",
       "version": "v1.0.9",
     },
   ],

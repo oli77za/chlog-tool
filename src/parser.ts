@@ -1,3 +1,5 @@
+import linkLineMatcher from './link_line_matcher';
+
 export type ChangelogVersion = {
   version: string;
   date: string;
@@ -45,14 +47,10 @@ const parseLine = (
     });
   }
 
-  const linkMatch = line.match(/^\[(.*)\]: (.*)\/?(compare|releases)?.*/);
-  if (linkMatch) {
+  const link = linkLineMatcher(line);
+  if (link) {
     newState = PARSING_STATE.LINK;
-    outputStruct.links.push({
-      version: linkMatch[1],
-      content: line,
-      gitBaseHref: linkMatch[2],
-    });
+    outputStruct.links.push(link);
   }
 
   switch (newState) {
