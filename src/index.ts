@@ -42,7 +42,14 @@ yargs(argsProvider())
   .command(
     'release <ver>',
     'Updates a CHANGELOG to a new release, pushes the content of Unreleased into a version section',
-    {},
+    {
+      replace: {
+        alias: 'r',
+        description: 'Replaces the content of the file',
+        type: 'string',
+        nargs: 1,
+      },
+    },
     runRelease
   )
   .demandCommand(1, 1, 'You need to specify a command')
