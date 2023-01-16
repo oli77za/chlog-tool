@@ -1,6 +1,6 @@
 {
   "name": "chlog-tool",
-  "version": "1.0.2-0",
+  "version": "1.0.3",
   "main": "dist/index.js",
   "bin": {
     "chlogtool": "bin/chlogtool"
